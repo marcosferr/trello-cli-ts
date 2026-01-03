@@ -1,6 +1,6 @@
 {
   "name": "trello-cli-ts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A CLI tool for Trello integration with Claude Code",
   "type": "module",
   "main": "dist/index.js",
