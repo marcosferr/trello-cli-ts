@@ -1,0 +1,29 @@
+{
+  "name": "trello-cli",
+  "version": "1.0.0",
+  "description": "A CLI tool for Trello integration with Claude Code",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "trello-cli": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js"
+  },
+  "keywords": [
+    "trello",
+    "cli",
+    "claude-code"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0"
+  }
+}
