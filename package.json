@@ -1,17 +1,32 @@
 {
-  "name": "trello-cli",
+  "name": "trello-cli-ts",
   "version": "1.0.0",
   "description": "A CLI tool for Trello integration with Claude Code",
   "type": "module",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "bin": {
-    "trello-cli": "./dist/index.js"
+    "trello-cli": "dist/index.js"
   },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsc",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build",
     "start": "node dist/index.js",
     "dev": "tsc && node dist/index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcosferr/trello-cli-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marcosferr/trello-cli-ts/issues"
+  },
+  "homepage": "https://github.com/marcosferr/trello-cli-ts#readme",
   "keywords": [
     "trello",
     "cli",
